@@ -1,0 +1,40 @@
+<h3>Interfaces programadas com Property Binding </h3>
+
+<!-- Sem property binding
+<input type="text" value= "valor inicial"> -->
+
+<!-- com property binding- angular faz o binding da propriedade -->
+<h4>1-caixa texto</h4>
+<input type="text" [value]= "initialValue">
+
+<br>
+<h4>2-botões</h4>
+<!-- botão habilitado -->
+<button >botão habilitado!</button>
+<!-- com propriedade disable :botão desabilitado -->
+<button disabled>botão desabilitado</button>
+<!-- propriedade disable definida dinamicamente com  property binding  -->
+<!-- <button [disabled]="isDisabled">Clique em mim!</button> -->
+<br>
+
+<!-- propriedade do html permite ler diferente do que esta escrito na tela = acessibilidade
+<p aria-label="Outro texto qualquer a ser lido pelo leitor de tela"
+> Atributos com property binding</p> 
+
+dinamicamente em variável, pode ser  vindo de api/calculo etc
+<p [attr.aria-label]="accessibilityText"></p> -->
+
+
+<br>
+
+
+<!-- Forma 1 - interpolação
+<img src="{{imageURL}}"> -->
+
+<!-- Forma 2 -property binding  não exige interpolação
+2.1 por meio de variável -->
+<img [src]="imageURL">
+
+<!-- Forma 2.2 por meio de função-->
+<!-- <img [src]="getImageURL()"> -->
+
