@@ -1,0 +1,13 @@
+header {
+    text-align :center;
+    padding: 0.8rem;
+    background-color: aqua;
+
+    //classe criada o & junta com a classe anterior
+    &_title {
+        color:blue;
+        margin:0;
+        font-size:2rem;
+
+    }
+}

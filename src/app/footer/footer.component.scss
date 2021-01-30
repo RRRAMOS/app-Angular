@@ -1,0 +1,14 @@
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: cadetblue;
+    color: cornsilk;
+    text-align: 1rem;
+    padding: 1rem;
+
+    &_text {
+        margin:0;
+    }
+}
